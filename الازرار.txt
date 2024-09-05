@@ -1,0 +1,4 @@
+ctrl for hint
+enter for cheke
+alt + r for relod after game end and delete winner task
+ctrl after end game = reset game

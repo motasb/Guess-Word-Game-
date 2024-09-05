@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title></title>
+</head>
+<body>
+    <div class="control-buttons">
+        <p>    "Ctrl" for Hint  <br>  "Enter" for check </p>
+        <span class="btn-primary rounded-pill">Start Game</span>
+    </div>
+    <h1 class="text-center"></h1>
+    <div class="container">
+    <div class="guess-game">
+        <div class="game-area">
+            <div class="inputs"></div>
+            <div class="control">
+                <button class="check" id="check"> Check Word</button>
+                <button class="hint" id="hint"> <span></span> Hints </button>
+            </div>
+            <div class="message"></div>
+        </div>
+        <div class="key-colors">
+            <div class="info-container container p-2 d-flex justify-content-between key-color fw-bold ">
+                <div class="name">
+                    Hello: <span></span>
+                </div>
+                <div id="timer">00:00</div>
+            </div>
+            <h2>Key Colors</h2>
+                <div class="key-color">
+                    <div class="key in-place"></div>
+                    <div class="key-text">Letter Is Correct and In Place</div>
+                </div>
+                <div class="key-color">
+                    <div class="key not-in-place"></div>
+                    <div class="key-text">Letter Is Correct But Not In Place</div>
+                </div>
+                <div class="key-color">
+                    <div class="key no"></div>
+                    <div class="key-text">Letter Is Wrong</div>
+                </div>
+                <div class="tasks"></div>
+        </div>
+    </div>
+    <footer></footer>
+</div>
+
+    <audio src="audio/Start Game.mp3" id="start" preload="auto"></audio>
+    <audio src="audio/Game Over.mp3" id="over" preload="auto"></audio>
+    <audio src="audio/win.mp3" id="win" preload="auto"></audio>
+    <audio src="audio/move.mp3" id="move" preload="auto"></audio>
+    <audio src="audio/input.mp3" id="input-sound" preload="auto"></audio>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@latest/dist/confetti.browser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
