@@ -326,6 +326,10 @@ function updateTimer() {
     if (timeLeft < 0 ) {
         clearInterval(stopTimer);
         document.getElementById("timer").textContent = " Time Over !";
+        guessButton.disabled = true;
+        getHintButton.disabled = true;
+        messageArea.innerHTML = `Time Over! The word is <span>${wordToGuess}</span> <p>Click "Ctrl" for Reload</p>`;
+        playSound(document.getElementById("over"));
     }
 };
 
